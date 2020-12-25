@@ -1,5 +1,7 @@
 fun main() {
-    println("start")
-    MergeDex.doMerge("data/merge/shell.dex", "data/merge/demo.apk", "data/merge/target.dex")
-    println("end")
+    println("main start")
+    val ret = ExecBAT.exec("./decompile.bat")
+    println("decompile.bat exec result:$ret")
+    MergeDex.doMerge("data/shell.dex", "data/demo.apk", "data/target.dex")
+    println("main end")
 }
