@@ -1,7 +1,7 @@
 @echo off
 echo decompile start
 cd data
-rmdir /s/q shell
-call apktool d shell.apk
+rmdir /s/q demo
+call apktool d demo.apk
 cd ..
 echo decompile end
